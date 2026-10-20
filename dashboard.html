@@ -57,6 +57,10 @@ input[type=search]{flex:1 1 180px}
 .main{min-width:0;display:grid;gap:8px}
 .top{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .score{color:var(--tungsten-ink);font-weight:500;letter-spacing:.1em}
+.verdict{padding:2px 7px;border-radius:4px;font-weight:500;letter-spacing:.08em}
+.v-go{background:var(--ok);color:var(--sheet)} .v-mid{background:var(--tungsten-soft);color:var(--tungsten-ink)} .v-no{background:var(--chip);color:var(--muted);text-decoration:line-through}
+.fit{display:inline-block;width:54px;height:6px;border-radius:3px;background:var(--chip);overflow:hidden;vertical-align:middle}
+.fit i{display:block;height:100%;background:var(--tungsten)}
 .src{background:var(--chip);padding:2px 7px;border-radius:4px;color:var(--ink)}
 .new{background:var(--tungsten);color:#1b1206;padding:2px 7px;border-radius:4px}
 h2{font:600 17px/1.35 var(--body);margin:0;text-wrap:pretty;overflow-wrap:anywhere}
@@ -102,8 +106,14 @@ textarea{width:100%;font:14px var(--body);background:var(--paper);color:var(--in
       <option value="aura">Auvergne-Rhône-Alpes</option>
       <option value="rhone">Rhône / Lyon</option>
     </select>
+    <select id="verdict" aria-label="Verdict">
+      <option value="all">Tous les verdicts</option>
+      <option value="go">Adaptés à moi (GO)</option>
+      <option value="gv">GO + À vérifier</option>
+    </select>
     <select id="tri" aria-label="Trier">
-      <option value="score">Plus pertinents</option>
+      <option value="fit">Adéquation à mon profil</option>
+      <option value="score">Score mots-clés</option>
       <option value="limite">Date limite proche</option>
       <option value="recent">Plus récents</option>
     </select>
@@ -119,7 +129,7 @@ textarea{width:100%;font:14px var(--body);background:var(--paper);color:var(--in
 const STATUTS=[["nouveau","À trier"],["creuser","À creuser"],["candidate","Candidaté"],["ecarte","Écartés"]];
 const AURA=["01","03","07","15","26","38","42","43","63","69","73","74"];
 const DEPTS={"01":"Ain","03":"Allier","07":"Ardèche","15":"Cantal","26":"Drôme","38":"Isère","42":"Loire","43":"Haute-Loire","63":"Puy-de-Dôme","69":"Rhône","73":"Savoie","74":"Haute-Savoie","75":"Paris"};
-const state={rows:[],meta:null,filtre:"nouveau",q:"",zone:"all",tri:"score",busy:{}};
+const state={rows:[],meta:null,filtre:"nouveau",q:"",zone:"all",verdict:"all",tri:"fit",busy:{}};
 let db=null,sample=null;
 const $=s=>document.querySelector(s);
 const today=new Date(new Date().toDateString());
@@ -128,14 +138,18 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const isAura=a=>(a.lieu||[]).some(l=>AURA.includes(l)||String(l).startsWith("FRK"));
 const isRhone=a=>(a.lieu||[]).some(l=>l==="69"||String(l).startsWith("FRK26"));
 const lieuTxt=a=>{const l=(a.lieu||[]).filter((x,i,arr)=>arr.indexOf(x)===i);if(!l.length)return"Lieu non précisé";return l.slice(0,3).map(x=>DEPTS[x]?`${DEPTS[x]} (${x})`:x).join(", ")};
+const vcls=v=>v==="GO"?"go":v==="NO-GO"?"no":"mid";
 const etoiles=s=>s>=70?"★★★":s>=50?"★★☆":"★☆☆";
 
 function visibles(){
   let r=state.rows.filter(a=>(a.statut||"nouveau")===state.filtre);
   if(state.filtre!=="ecarte"&&state.filtre!=="candidate") r=r.filter(a=>!a.date_limite||jours(a.date_limite)>=0);
   if(state.zone==="aura")r=r.filter(isAura); if(state.zone==="rhone")r=r.filter(isRhone);
+  if(state.verdict==="go")r=r.filter(a=>a.verdict==="GO");
+  if(state.verdict==="gv")r=r.filter(a=>a.verdict==="GO"||a.verdict==="À VÉRIFIER");
   if(state.q){const q=state.q.toLowerCase();r=r.filter(a=>[a.titre,a.acheteur,a.resume_ia,a.note].join(" ").toLowerCase().includes(q))}
-  const k={score:(a,b)=>(b.score||0)-(a.score||0),limite:(a,b)=>(a.date_limite||"9")<(b.date_limite||"9")?-1:1,recent:(a,b)=>(b.vu_le||"")>(a.vu_le||"")?1:-1};
+  const fit=a=>a.adequation??(a.score||0)*.8;
+  const k={fit:(a,b)=>fit(b)-fit(a)||((a.date_limite||"9")<(b.date_limite||"9")?-1:1),score:(a,b)=>(b.score||0)-(a.score||0),limite:(a,b)=>(a.date_limite||"9")<(b.date_limite||"9")?-1:1,recent:(a,b)=>(b.vu_le||"")>(a.vu_le||"")?1:-1};
   return r.sort(k[state.tri]);
 }
 
@@ -160,10 +174,10 @@ function card(a){
     :`<div class="tc ${j<=5?"urgent":j<=10?"soon":""}"><span class="u">J −</span><span class="d">${j}</span><span class="u">${new Date(a.date_limite).toLocaleDateString("fr-FR",{day:"2-digit",month:"short"})}</span></div>`;
   const neuf=a.vu_le&&jours(a.vu_le)>=-1&&st==="nouveau";
   const btn=(k,l)=>`<button class="btn ${st===k?"on":""}" data-act="statut" data-v="${k}" data-id="${esc(a.id)}">${l}</button>`;
-  return `<article class="shot ${(a.score||0)>=70?"hot":""}">
+  return `<article class="shot ${a.verdict==="GO"||(!a.verdict&&(a.score||0)>=70)?"hot":""}">
     ${tc}
     <div class="main">
-      <div class="top"><span class="score" title="Score ${a.score}/100">${etoiles(a.score||0)}</span><span class="src">${esc(a.source)}</span>${neuf?'<span class="new">Nouveau</span>':""}<span>${esc(lieuTxt(a))}</span></div>
+      <div class="top">${a.verdict?`<span class="verdict v-${vcls(a.verdict)}">${esc(a.verdict)}</span>`:""}${a.adequation!=null?`<span class="fit" title="Adéquation à ton profil"><i style="width:${a.adequation}%"></i></span><span>${a.adequation}%</span>`:`<span class="score" title="Score ${a.score}/100">${etoiles(a.score||0)}</span>`}<span class="src">${esc(a.source)}</span>${neuf?'<span class="new">Nouveau</span>':""}<span>${esc(lieuTxt(a))}</span></div>
       <h2>${esc(a.titre)}</h2>
       <div class="buyer">${esc(a.acheteur||"Acheteur non précisé")}</div>
       ${a.resume_ia?`<div class="ia"><b>Lecture de Claude</b>${esc(a.resume_ia)}</div>`:""}
@@ -200,7 +214,9 @@ Réponds en français, 5 lignes maximum, sans titre :
 1) Verdict : GO, À VÉRIFIER ou NO-GO, avec la raison principale.
 2) Risque ou exigence à vérifier dans le DCE (références, chiffre d'affaires, allotissement, déplacements).
 3) L'angle de candidature qui le distinguerait.`,{modelTier:"default"});
-    await maj(id,{analyse:res.text.trim()});
+    const t=res.text.trim();const m=t.match(/\b(NO-GO|À VÉRIFIER|A VERIFIER|GO)\b/i);
+    const v=m?(m[1].toUpperCase().startsWith("NO")?"NO-GO":m[1].toUpperCase()==="GO"?"GO":"À VÉRIFIER"):null;
+    await maj(id,v?{analyse:t,verdict:v}:{analyse:t});
   }catch(e){if(e?.code==="not_granted"){sample=null}}
   finally{delete state.busy[id];render()}
 }
@@ -214,6 +230,7 @@ document.addEventListener("click",e=>{
 document.addEventListener("change",e=>{
   const n=e.target.dataset?.note;if(n){maj(n,{note:e.target.value});return}
   if(e.target.id==="zone"){state.zone=e.target.value;render()}
+  if(e.target.id==="verdict"){state.verdict=e.target.value;render()}
   if(e.target.id==="tri"){state.tri=e.target.value;render()}
 });
 $("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
