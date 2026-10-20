@@ -166,37 +166,6 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "ted-650703-2026",
-  "source": "TED",
-  "titre": "France – Services de photographie aérienne – REALISATION D'UNE ORTHOPHOTOGRAPHIE HIVER, D'UN LEVER LIDAR ET D'UN PHOTOMAILLAGE 3D SUR LE TERRITOIRE DE LA METROPOLE DE LYON",
-  "acheteur": "CRAIG - Centre Régional Auvergne-Rhône-Alpes de l Information Géographique",
-  "lieu": [
-   "FRK26",
-   "FRK26"
-  ],
-  "date_publication": "2026-09-22",
-  "date_limite": null,
-  "type": "Services",
-  "procedure": "cn-standard",
-  "descripteurs": [],
-  "cpv": [
-   "79961200",
-   "79961200",
-   "71354100"
-  ],
-  "description": "La présente consultation concerne la réalisation d’une prise de vues aériennes hiver (verticales et obliques) et d’un lever LiDAR concomitant sur environ 676 km². La prestation comprendra les éléments suivants : 1. Prise de vues aériennes & orthophotographie RVB / IRC - La réalisation d’une prise de vues aériennes numérique couleur (verticale et oblique) et infrarouge (verticale) comprenant la fourniture des clichés, des paramètres du vol et d’une aérotriangulation - La réalisation et la fourniture d’une orthophotographie numérique couleur naturelle et infrarouge couleur 1. Lever LiDAR et post",
-  "url": "https://ted.europa.eu/fr/notice/-/detail/650703-2026",
-  "score": 73,
-  "raisons": [
-   "photographi",
-   "photo",
-   "CPV audiovisuel/photo",
-   "Rhône / Lyon"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
   "id": "ted-709164-2026",
   "source": "TED",
   "titre": "France – Équipement multimédia – Création et installation d'une salle immersive - Le Pal à Saint Pourçain sur Besbre - Lot n°4 Production multimédia",
@@ -265,7 +234,7 @@
   "titre": "Réalisation de reportages photographiques et vidéos",
   "acheteur": "Communauté d'Agglomération Sophia Antipolis",
   "lieu": [
-   "6",
+   "06",
    "83",
    "75",
    "13"
@@ -586,7 +555,7 @@
   "titre": "Realisation Et Livraison De Reportages Photographiques Professionnels",
   "acheteur": "Département des Alpes de Haute Provence",
   "lieu": [
-   "4"
+   "04"
   ],
   "date_publication": "2026-10-01",
   "date_limite": "2026-11-05",
@@ -695,53 +664,6 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "ted-710218-2026",
-  "source": "TED",
-  "titre": "France – Services archéologiques – Projet Interreg France - Suisse 2021- 2027 « Pierres &amp;amp; Pixels - des châteaux en 3D»",
-  "acheteur": "Département de la Haute-Savoie",
-  "lieu": [
-   "FRK28",
-   "FRK28",
-   "FRK28",
-   "FRK28"
-  ],
-  "date_publication": "2026-10-14",
-  "date_limite": "2026-11-16",
-  "type": "Services",
-  "procedure": "cn-standard",
-  "descripteurs": [],
-  "cpv": [
-   "71351914",
-   "79415200",
-   "79933000",
-   "92111100",
-   "71351914",
-   "71351914",
-   "71351914",
-   "71351914",
-   "79415200",
-   "79933000",
-   "92111100",
-   "72242000",
-   "79415200",
-   "79933000",
-   "92111100",
-   "92110000",
-   "79415200",
-   "79933000",
-   "92111100"
-  ],
-  "description": "Le contrat porte sur les prestations suivantes : réalisation d'une fouille archéologique, sous la responsabilité scientifique du Département, incluant cotraitance (responsable adjoint, spécialistes et techniciens) et gestion des moyens mécaniques et sécuritaires (étais, escalier de chantier)",
-  "url": "https://ted.europa.eu/fr/notice/-/detail/710218-2026",
-  "score": 45,
-  "raisons": [
-   "CPV audiovisuel/photo",
-   "Auvergne-Rhône-Alpes"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
   "id": "boamp-26-101414",
   "source": "BOAMP",
   "titre": "Prestations de captation, réalisation, diffusion en direct et mise à disposition en replay des séances du conseil municipal et d'événements municipaux",
@@ -833,7 +755,7 @@
   "titre": "25V1808 - Location de matériels audiovisuel, de vidéo, de streaming et de projection pour les besoins de la Ville de Nice et de la Métropole Nice Côte d'Azur",
   "acheteur": "Ville de Nice",
   "lieu": [
-   "6"
+   "06"
   ],
   "date_publication": "2026-09-30",
   "date_limite": "2026-11-03",
@@ -909,6 +831,34 @@
   "score": 40,
   "raisons": [
    "video",
+   "Auvergne-Rhône-Alpes"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-100102",
+  "source": "BOAMP",
+  "titre": "Abonnement aux ressources documentaires numériques d'autoformation pour les besoins de la Bibliothèque départementale de l'Ain",
+  "acheteur": "Département de l'Ain",
+  "lieu": [
+   "01"
+  ],
+  "date_publication": "2026-10-15",
+  "date_limite": "2026-11-23",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Abonnement"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100102",
+  "score": 40,
+  "raisons": [
+   "documentaire",
    "Auvergne-Rhône-Alpes"
   ],
   "exclu": false,
@@ -1004,6 +954,35 @@
    "documentaire",
    "Auvergne-Rhône-Alpes",
    "délai court (6 j)"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-100784",
+  "source": "BOAMP",
+  "titre": "Fourniture et livraison de barquettes alimentaires scellables en cellulose et de films de scellage associés, certifiés compostables et recyclables (norme EN 13432)",
+  "acheteur": "VILLE DE MONTLUCON",
+  "lieu": [
+   "03"
+  ],
+  "date_publication": "2026-10-18",
+  "date_limite": "2026-11-17",
+  "type": [
+   "FOURNITURES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Barquettes alimentaires",
+   "Film"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100784",
+  "score": 35,
+  "raisons": [
+   "film",
+   "Auvergne-Rhône-Alpes"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
