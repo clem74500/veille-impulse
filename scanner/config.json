@@ -1,6 +1,6 @@
 {
   "fenetre_jours": 10,
-  "score_minimum": 35,
+  "score_minimum": 45,
   "requetes_boamp": [
     "vidéo",
     "video",
@@ -39,7 +39,6 @@
     "video": 15,
     "audiovisuel": 15,
     "clip": 12,
-    "documentaire": 15,
     "photographi": 15,
     "photo": 8,
     "film": 10,
@@ -51,7 +50,10 @@
     "teaser": 12,
     "reseaux sociaux": 6,
     "communication": 4,
-    "evenementiel": 5
+    "evenementiel": 5,
+    "film documentaire": 15,
+    "retransmission": 12,
+    "diffusion en direct": 12
   },
   "mots_cles_exclus": [
     "videoprotection",
@@ -94,7 +96,20 @@
     "photographie aerienne",
     "releve topographique",
     "lidar",
-    "archeolog"
+    "archeolog",
+    "livres",
+    "jeux video",
+    "jeux videos",
+    "dvd",
+    "ressources documentaires",
+    "barquette",
+    "decontamination",
+    "location de materiel",
+    "location de materiels",
+    "abonnement",
+    "films de scellage",
+    "impression",
+    "routage"
   ],
   "departements_prioritaires": [
     "69"

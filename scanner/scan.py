@@ -120,7 +120,7 @@ def score_annonce(a: dict) -> dict:
         score += 5
 
     # sans aucun signal métier, l'annonce n'est pas pour nous
-    if pts_mots == 0 and "CPV audiovisuel/photo" not in raisons:
+    if pts_mots < 15 and "CPV audiovisuel/photo" not in raisons:
         return {**a, "score": 0, "raisons": ["aucun signal vidéo/photo"], "exclu": True}
 
     return {**a, "score": min(score, 100), "raisons": raisons, "exclu": False}
