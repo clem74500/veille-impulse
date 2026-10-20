@@ -25,6 +25,7 @@
    "captation",
    "video",
    "film",
+   "retransmission",
    "CPV audiovisuel/photo"
   ],
   "exclu": false,
@@ -56,6 +57,7 @@
    "captation",
    "video",
    "film",
+   "retransmission",
    "CPV audiovisuel/photo"
   ],
   "exclu": false,
@@ -198,6 +200,35 @@
   "vu_le": "2026-10-20"
  },
  {
+  "id": "boamp-26-92201",
+  "source": "BOAMP",
+  "titre": "Affaire n°26A037 - Captation et retransmission des Conseils en direct et en différé",
+  "acheteur": "Chartres Métropole (28)",
+  "lieu": [
+   "28"
+  ],
+  "date_publication": "2026-09-25",
+  "date_limite": "2026-10-27",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Audiovisuel"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92201",
+  "score": 55,
+  "raisons": [
+   "captation",
+   "audiovisuel",
+   "retransmission"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-20"
+ },
+ {
   "id": "ted-678058-2026",
   "source": "TED",
   "titre": "France – Production de films et de vidéos à usage pédagogique – CONCEPTION ET REALISATION DE RESSOURCES FORMATIVES NUMERIQUES pour le compte du CNFPT",
@@ -224,6 +255,35 @@
    "video",
    "film",
    "CPV audiovisuel/photo"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-100349",
+  "source": "BOAMP",
+  "titre": "Affaire n°26A037 - Captation et retransmission des conseils en direct et en différé sur Internet",
+  "acheteur": "Chartres Métropole (28)",
+  "lieu": [
+   "28"
+  ],
+  "date_publication": "2026-10-17",
+  "date_limite": "2026-11-03",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Audiovisuel"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100349",
+  "score": 55,
+  "raisons": [
+   "captation",
+   "audiovisuel",
+   "retransmission"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
@@ -323,36 +383,30 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "boamp-26-97782",
+  "id": "boamp-26-101414",
   "source": "BOAMP",
-  "titre": "Accord-cadre de prestations intellectuelles - Conception et réalisation des supports de communication papier, numériques et audiovisuels",
-  "acheteur": "Agence publique pour l'immobilier de la justice",
+  "titre": "Prestations de captation, réalisation, diffusion en direct et mise à disposition en replay des séances du conseil municipal et d'événements municipaux",
+  "acheteur": "Mairie d&#039;ivry-sur-seine",
   "lieu": [
-   "31",
-   "35",
-   "59",
-   "69",
-   "75"
+   "94"
   ],
-  "date_publication": "2026-10-11",
-  "date_limite": "2026-11-12",
+  "date_publication": "2026-10-20",
+  "date_limite": "2026-11-23",
   "type": [
    "SERVICES"
   ],
   "procedure": "Procédure Ouverte",
   "descripteurs": [
-   "Edition",
-   "Impression",
-   "Publicité, Communication"
+   "Audiovisuel"
   ],
   "cpv": [],
   "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97782",
-  "score": 54,
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101414",
+  "score": 55,
   "raisons": [
+   "captation",
    "audiovisuel",
-   "communication",
-   "Rhône / Lyon"
+   "diffusion en direct"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
@@ -382,53 +436,6 @@
    "realisation de video",
    "video",
    "communication"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "ted-699934-2026",
-  "source": "TED",
-  "titre": "France – Services de publicité – Magazine « CCI Économie » Rédaction – régie publicitaire – mise en page – impression – routage et photographie 2027 - 2029",
-  "acheteur": "CHAMBRE COMMERCE INDUSTRIE LOIR ET CHER",
-  "lieu": [
-   "FRB05",
-   "FRB05",
-   "FRB05",
-   "FRB05",
-   "FRB05",
-   "FRB05"
-  ],
-  "date_publication": "2026-10-09",
-  "date_limite": "2026-11-06",
-  "type": "Services",
-  "procedure": "cn-standard",
-  "descripteurs": [],
-  "cpv": [
-   "79341000",
-   "79800000",
-   "64000000",
-   "92312211",
-   "79822500",
-   "79961000",
-   "79341000",
-   "79341000",
-   "79341000",
-   "79341000",
-   "79341000",
-   "79810000",
-   "79810000",
-   "64121100",
-   "79961000",
-   "64121100"
-  ],
-  "description": "Rédactionnel",
-  "url": "https://ted.europa.eu/fr/notice/-/detail/699934-2026",
-  "score": 53,
-  "raisons": [
-   "photographi",
-   "photo",
-   "CPV audiovisuel/photo"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
@@ -484,34 +491,6 @@
   "score": 50,
   "raisons": [
    "video",
-   "Rhône / Lyon"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-101097",
-  "source": "BOAMP",
-  "titre": "Décontamination du fonds documentaire de la bibliothèque du Musée des Beaux-Arts de Lyon, manutention et transport",
-  "acheteur": "Ville de Lyon",
-  "lieu": [
-   "69"
-  ],
-  "date_publication": "2026-10-16",
-  "date_limite": "2026-11-19",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Adaptée",
-  "descripteurs": [
-   "Prestations de services"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101097",
-  "score": 50,
-  "raisons": [
-   "documentaire",
    "Rhône / Lyon"
   ],
   "exclu": false,
@@ -603,386 +582,6 @@
    "reportage",
    "photographi",
    "photo"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-92201",
-  "source": "BOAMP",
-  "titre": "Affaire n°26A037 - Captation et retransmission des Conseils en direct et en différé",
-  "acheteur": "Chartres Métropole (28)",
-  "lieu": [
-   "28"
-  ],
-  "date_publication": "2026-09-25",
-  "date_limite": "2026-10-27",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Audiovisuel"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92201",
-  "score": 45,
-  "raisons": [
-   "captation",
-   "audiovisuel"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-100349",
-  "source": "BOAMP",
-  "titre": "Affaire n°26A037 - Captation et retransmission des conseils en direct et en différé sur Internet",
-  "acheteur": "Chartres Métropole (28)",
-  "lieu": [
-   "28"
-  ],
-  "date_publication": "2026-10-17",
-  "date_limite": "2026-11-03",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Audiovisuel"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100349",
-  "score": 45,
-  "raisons": [
-   "captation",
-   "audiovisuel"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-101414",
-  "source": "BOAMP",
-  "titre": "Prestations de captation, réalisation, diffusion en direct et mise à disposition en replay des séances du conseil municipal et d'événements municipaux",
-  "acheteur": "Mairie d&#039;ivry-sur-seine",
-  "lieu": [
-   "94"
-  ],
-  "date_publication": "2026-10-20",
-  "date_limite": "2026-11-23",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Audiovisuel"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101414",
-  "score": 45,
-  "raisons": [
-   "captation",
-   "audiovisuel"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-94734",
-  "source": "BOAMP",
-  "titre": "Conception et réalisation de supports photos et vidéos",
-  "acheteur": "Syndicat Mixte Ports de Normandie",
-  "lieu": [
-   "14"
-  ],
-  "date_publication": "2026-10-01",
-  "date_limite": "2026-10-23",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Matériel photographique et cinématographique"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-94734",
-  "score": 43,
-  "raisons": [
-   "video",
-   "photographi",
-   "photo",
-   "délai court (3 j)"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-94779",
-  "source": "BOAMP",
-  "titre": "Abonnement, accès en ligne et fourniture de ressources documentaires numériques pour le réseau des bibliothèques de Clermont Auvergne Métropole",
-  "acheteur": "CLERMONT AUVERGNE METROPOLE",
-  "lieu": [
-   "63"
-  ],
-  "date_publication": "2026-10-02",
-  "date_limite": "2026-11-02",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Abonnement"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-94779",
-  "score": 40,
-  "raisons": [
-   "documentaire",
-   "Auvergne-Rhône-Alpes"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-93813",
-  "source": "BOAMP",
-  "titre": "25V1808 - Location de matériels audiovisuel, de vidéo, de streaming et de projection pour les besoins de la Ville de Nice et de la Métropole Nice Côte d'Azur",
-  "acheteur": "Ville de Nice",
-  "lieu": [
-   "06"
-  ],
-  "date_publication": "2026-09-30",
-  "date_limite": "2026-11-03",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Audiovisuel",
-   "Location (matériels)"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-93813",
-  "score": 40,
-  "raisons": [
-   "video",
-   "audiovisuel"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-99132",
-  "source": "BOAMP",
-  "titre": "Fourniture de livres neufs non scolaires, de CD, DVD et jeux vidéos neufs",
-  "acheteur": "COMMUNE DE SAINT-MARTIN-D'HERES",
-  "lieu": [
-   "38"
-  ],
-  "date_publication": "2026-10-15",
-  "date_limite": "2026-11-06",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Cd, DVD",
-   "Livres"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-99132",
-  "score": 40,
-  "raisons": [
-   "video",
-   "Auvergne-Rhône-Alpes"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-96124",
-  "source": "BOAMP",
-  "titre": "Fourniture de livres neufs non scolaires, de CD, DVD et jeux vidéos neufs",
-  "acheteur": "COMMUNE DE SAINT-MARTIN-D'HERES",
-  "lieu": [
-   "38"
-  ],
-  "date_publication": "2026-10-07",
-  "date_limite": "2026-11-06",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Cd, DVD",
-   "Livres"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-96124",
-  "score": 40,
-  "raisons": [
-   "video",
-   "Auvergne-Rhône-Alpes"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-100102",
-  "source": "BOAMP",
-  "titre": "Abonnement aux ressources documentaires numériques d'autoformation pour les besoins de la Bibliothèque départementale de l'Ain",
-  "acheteur": "Département de l'Ain",
-  "lieu": [
-   "01"
-  ],
-  "date_publication": "2026-10-15",
-  "date_limite": "2026-11-23",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Abonnement"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100102",
-  "score": 40,
-  "raisons": [
-   "documentaire",
-   "Auvergne-Rhône-Alpes"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-97432",
-  "source": "BOAMP",
-  "titre": "Prestations évènementielles et institutionnelles photos et vidéos",
-  "acheteur": "Commune de Vitrolles",
-  "lieu": [
-   "13"
-  ],
-  "date_publication": "2026-10-08",
-  "date_limite": "2026-10-30",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Prestations de services"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97432",
-  "score": 38,
-  "raisons": [
-   "video",
-   "photo",
-   "evenementiel"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-97117",
-  "source": "BOAMP",
-  "titre": "Magazine « CCI Économie » Rédaction – régie publicitaire – mise en page – impression – routage -Photographie Période : février 2027 – décembre 2029",
-  "acheteur": "CCI LOIR ET CHER",
-  "lieu": [
-   "18",
-   "28",
-   "36",
-   "37",
-   "41",
-   "45"
-  ],
-  "date_publication": "2026-10-09",
-  "date_limite": "2026-11-06",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Impression",
-   "Publicité, Communication",
-   "Télécommunications"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97117",
-  "score": 37,
-  "raisons": [
-   "photographi",
-   "photo",
-   "communication"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-95113",
-  "source": "BOAMP",
-  "titre": "Fourniture De Livres Non Scolaires Fictions Et Documentaires A L'Usage Des Mediatheques De Roannais Agglomeration",
-  "acheteur": "Roannais Agglomeration",
-  "lieu": [
-   "42"
-  ],
-  "date_publication": "2026-10-02",
-  "date_limite": "2026-10-26",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Livres"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95113",
-  "score": 35,
-  "raisons": [
-   "documentaire",
-   "Auvergne-Rhône-Alpes",
-   "délai court (6 j)"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
-  "id": "boamp-26-100784",
-  "source": "BOAMP",
-  "titre": "Fourniture et livraison de barquettes alimentaires scellables en cellulose et de films de scellage associés, certifiés compostables et recyclables (norme EN 13432)",
-  "acheteur": "VILLE DE MONTLUCON",
-  "lieu": [
-   "03"
-  ],
-  "date_publication": "2026-10-18",
-  "date_limite": "2026-11-17",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Barquettes alimentaires",
-   "Film"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100784",
-  "score": 35,
-  "raisons": [
-   "film",
-   "Auvergne-Rhône-Alpes"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
