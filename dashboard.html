@@ -1,0 +1,231 @@
+<title>Veille Impulse</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout : une « feuille de service » de tournage — bandeau clap en tête, puis la liste des marchés comme des plans à tourner. */
+:root{
+  --paper:#eef0f2; --sheet:#ffffff; --ink:#18212b; --muted:#5b6672; --line:#d5dade;
+  --tungsten:#d9822b; --tungsten-ink:#8f4c0c; --tungsten-soft:#fbeedd;
+  --ok:#2f7a4f; --warn:#b5651d; --crit:#b23a3a; --chip:#e6eaee;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#11161c; --sheet:#1a2129; --ink:#e7ebef; --muted:#9aa5b1; --line:#2c3540;
+  --tungsten:#f0a04b; --tungsten-ink:#f6bd7d; --tungsten-soft:#33261a;
+  --ok:#6cc292; --warn:#e9a35c; --crit:#ef7d7d; --chip:#252e38; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11161c; --sheet:#1a2129; --ink:#e7ebef; --muted:#9aa5b1; --line:#2c3540;
+  --tungsten:#f0a04b; --tungsten-ink:#f6bd7d; --tungsten-soft:#33261a;
+  --ok:#6cc292; --warn:#e9a35c; --crit:#ef7d7d; --chip:#252e38; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:980px;margin:0 auto;display:grid;gap:20px}
+
+/* bandeau clap */
+.slate{background:var(--ink);color:var(--paper);border-radius:10px;overflow:hidden}
+.stripes{height:14px;background:repeating-linear-gradient(-45deg,var(--paper) 0 14px,var(--ink) 14px 28px);opacity:.9}
+.slate-body{padding:16px 18px 18px;display:grid;gap:14px}
+.slate h1{font:800 clamp(34px,7vw,52px)/.9 var(--display);letter-spacing:.02em;text-transform:uppercase;margin:0;text-wrap:balance}
+.slate h1 span{color:var(--tungsten)}
+.slate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:color-mix(in srgb,var(--paper) 25%,transparent);border-radius:6px;overflow:hidden}
+.cell{background:var(--ink);padding:8px 10px;min-width:0}
+.cell small{display:block;font:500 10px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.65}
+.cell b{font:600 22px/1.2 var(--display);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+
+/* filtres */
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tab{font:500 13px var(--body);border:1px solid var(--line);background:var(--sheet);color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tab .n{font:500 11px var(--mono);opacity:.7}
+.bar .sp{flex:1}
+select,input[type=search]{font:14px var(--body);background:var(--sheet);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+input[type=search]{flex:1 1 180px}
+:focus-visible{outline:2px solid var(--tungsten);outline-offset:2px}
+
+/* plans */
+.list{display:grid;gap:12px}
+.shot{background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:64px 1fr;gap:14px;position:relative}
+.shot.hot{border-left:4px solid var(--tungsten)}
+.tc{display:grid;align-content:start;justify-items:center;gap:2px;text-align:center}
+.tc .d{font:800 30px/1 var(--display);font-variant-numeric:tabular-nums}
+.tc .u{font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tc.urgent .d{color:var(--crit)} .tc.soon .d{color:var(--warn)}
+.main{min-width:0;display:grid;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{color:var(--tungsten-ink);font-weight:500;letter-spacing:.1em}
+.src{background:var(--chip);padding:2px 7px;border-radius:4px;color:var(--ink)}
+.new{background:var(--tungsten);color:#1b1206;padding:2px 7px;border-radius:4px}
+h2{font:600 17px/1.35 var(--body);margin:0;text-wrap:pretty;overflow-wrap:anywhere}
+.buyer{color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+.ia{background:var(--tungsten-soft);border-radius:8px;padding:10px 12px;font-size:14px;white-space:pre-wrap}
+.ia b{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--tungsten-ink);display:block;margin-bottom:2px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font:12px var(--body);background:var(--chip);padding:2px 8px;border-radius:999px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.btn{font:500 13px var(--body);border:1px solid var(--line);background:transparent;color:var(--ink);padding:6px 11px;border-radius:7px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.on{background:var(--tungsten-soft);border-color:var(--tungsten);color:var(--tungsten-ink)}
+.btn:disabled{opacity:.5;cursor:default}
+textarea{width:100%;font:14px var(--body);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;min-height:38px}
+.empty{background:var(--sheet);border:1px dashed var(--line);border-radius:10px;padding:28px 20px;text-align:center;color:var(--muted)}
+.empty strong{display:block;font:800 26px var(--display);letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:6px}
+.foot{font:12px var(--mono);color:var(--muted);text-align:center}
+@media (max-width:520px){.shot{grid-template-columns:1fr}.tc{grid-auto-flow:column;justify-content:start;align-items:baseline;gap:6px}}
+@media (prefers-reduced-motion:no-preference){.shot{transition:border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header class="slate">
+    <div class="stripes"></div>
+    <div class="slate-body">
+      <h1>Veille <span>Impulse</span></h1>
+      <div class="slate-grid">
+        <div class="cell"><small>Marchés ouverts</small><b id="k-open">—</b></div>
+        <div class="cell"><small>Nouveaux</small><b id="k-new">—</b></div>
+        <div class="cell"><small>Région AURA</small><b id="k-aura">—</b></div>
+        <div class="cell"><small>Candidatures</small><b id="k-cand">—</b></div>
+        <div class="cell"><small>Dernier scan</small><b id="k-scan">—</b></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="bar" id="tabs" aria-label="Statut"></nav>
+  <div class="bar">
+    <input type="search" id="q" placeholder="Rechercher un acheteur, un mot…" aria-label="Rechercher">
+    <select id="zone" aria-label="Zone">
+      <option value="all">Toute la France</option>
+      <option value="aura">Auvergne-Rhône-Alpes</option>
+      <option value="rhone">Rhône / Lyon</option>
+    </select>
+    <select id="tri" aria-label="Trier">
+      <option value="score">Plus pertinents</option>
+      <option value="limite">Date limite proche</option>
+      <option value="recent">Plus récents</option>
+    </select>
+  </div>
+
+  <main class="list" id="list">
+    <div class="empty"><strong>Le plateau se prépare</strong>Les marchés repérés chaque matin (BOAMP, TED, alertes mail) apparaissent ici après le premier scan.</div>
+  </main>
+  <p class="foot" id="foot">Scan automatique en semaine · sources BOAMP, TED, Gmail</p>
+</div>
+
+<script>
+const STATUTS=[["nouveau","À trier"],["creuser","À creuser"],["candidate","Candidaté"],["ecarte","Écartés"]];
+const AURA=["01","03","07","15","26","38","42","43","63","69","73","74"];
+const DEPTS={"01":"Ain","03":"Allier","07":"Ardèche","15":"Cantal","26":"Drôme","38":"Isère","42":"Loire","43":"Haute-Loire","63":"Puy-de-Dôme","69":"Rhône","73":"Savoie","74":"Haute-Savoie","75":"Paris"};
+const state={rows:[],meta:null,filtre:"nouveau",q:"",zone:"all",tri:"score",busy:{}};
+let db=null,sample=null;
+const $=s=>document.querySelector(s);
+const today=new Date(new Date().toDateString());
+const jours=d=>d?Math.round((new Date(d)-today)/864e5):null;
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const isAura=a=>(a.lieu||[]).some(l=>AURA.includes(l)||String(l).startsWith("FRK"));
+const isRhone=a=>(a.lieu||[]).some(l=>l==="69"||String(l).startsWith("FRK26"));
+const lieuTxt=a=>{const l=(a.lieu||[]).filter((x,i,arr)=>arr.indexOf(x)===i);if(!l.length)return"Lieu non précisé";return l.slice(0,3).map(x=>DEPTS[x]?`${DEPTS[x]} (${x})`:x).join(", ")};
+const etoiles=s=>s>=70?"★★★":s>=50?"★★☆":"★☆☆";
+
+function visibles(){
+  let r=state.rows.filter(a=>(a.statut||"nouveau")===state.filtre);
+  if(state.filtre!=="ecarte"&&state.filtre!=="candidate") r=r.filter(a=>!a.date_limite||jours(a.date_limite)>=0);
+  if(state.zone==="aura")r=r.filter(isAura); if(state.zone==="rhone")r=r.filter(isRhone);
+  if(state.q){const q=state.q.toLowerCase();r=r.filter(a=>[a.titre,a.acheteur,a.resume_ia,a.note].join(" ").toLowerCase().includes(q))}
+  const k={score:(a,b)=>(b.score||0)-(a.score||0),limite:(a,b)=>(a.date_limite||"9")<(b.date_limite||"9")?-1:1,recent:(a,b)=>(b.vu_le||"")>(a.vu_le||"")?1:-1};
+  return r.sort(k[state.tri]);
+}
+
+function render(){
+  const ouverts=state.rows.filter(a=>(a.statut||"nouveau")!=="ecarte"&&(!a.date_limite||jours(a.date_limite)>=0));
+  $("#k-open").textContent=ouverts.length;
+  $("#k-new").textContent=state.rows.filter(a=>(a.statut||"nouveau")==="nouveau").length;
+  $("#k-aura").textContent=ouverts.filter(isAura).length;
+  $("#k-cand").textContent=state.rows.filter(a=>a.statut==="candidate").length;
+  $("#k-scan").textContent=state.meta?.dernier_scan?new Date(state.meta.dernier_scan).toLocaleDateString("fr-FR",{day:"2-digit",month:"short"}):"—";
+  $("#tabs").innerHTML=STATUTS.map(([k,l])=>`<button class="tab" data-f="${k}" aria-pressed="${state.filtre===k}">${l}<span class="n">${state.rows.filter(a=>(a.statut||"nouveau")===k).length}</span></button>`).join("");
+  const r=visibles();
+  if(!state.rows.length&&db===null){return}
+  if(!r.length){$("#list").innerHTML=`<div class="empty"><strong>Rien à l'image</strong>${state.rows.length?"Aucun marché dans cette vue. Change de filtre ou de zone.":"Le premier scan remplira ce tableau demain matin."}</div>`;return}
+  $("#list").innerHTML=r.map(card).join("");
+  if(state.meta?.erreurs?.length) $("#foot").textContent="Dernier scan incomplet : "+state.meta.erreurs.join(" · ");
+}
+
+function card(a){
+  const j=jours(a.date_limite);const st=a.statut||"nouveau";
+  const tc=j===null?`<div class="tc"><span class="d">?</span><span class="u">date limite</span></div>`
+    :`<div class="tc ${j<=5?"urgent":j<=10?"soon":""}"><span class="u">J −</span><span class="d">${j}</span><span class="u">${new Date(a.date_limite).toLocaleDateString("fr-FR",{day:"2-digit",month:"short"})}</span></div>`;
+  const neuf=a.vu_le&&jours(a.vu_le)>=-1&&st==="nouveau";
+  const btn=(k,l)=>`<button class="btn ${st===k?"on":""}" data-act="statut" data-v="${k}" data-id="${esc(a.id)}">${l}</button>`;
+  return `<article class="shot ${(a.score||0)>=70?"hot":""}">
+    ${tc}
+    <div class="main">
+      <div class="top"><span class="score" title="Score ${a.score}/100">${etoiles(a.score||0)}</span><span class="src">${esc(a.source)}</span>${neuf?'<span class="new">Nouveau</span>':""}<span>${esc(lieuTxt(a))}</span></div>
+      <h2>${esc(a.titre)}</h2>
+      <div class="buyer">${esc(a.acheteur||"Acheteur non précisé")}</div>
+      ${a.resume_ia?`<div class="ia"><b>Lecture de Claude</b>${esc(a.resume_ia)}</div>`:""}
+      ${a.analyse?`<div class="ia"><b>Analyse go / no-go</b>${esc(a.analyse)}</div>`:""}
+      ${(a.raisons||[]).length?`<div class="chips">${a.raisons.slice(0,6).map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>`:""}
+      <textarea data-note="${esc(a.id)}" id="note-${esc(a.id)}" placeholder="Note perso (contact, idée d'angle, budget…)" rows="1">${esc(a.note||"")}</textarea>
+      <div class="actions">
+        <a class="btn primary" href="${esc(a.url)}" target="_blank" rel="noopener">Voir l'avis ↗</a>
+        ${sample&&!a.analyse?`<button class="btn" data-act="analyse" data-id="${esc(a.id)}" ${state.busy[a.id]?"disabled":""}>${state.busy[a.id]?"Analyse…":"Go / no-go"}</button>`:""}
+        ${btn("creuser","À creuser")}${btn("candidate","Candidaté")}${btn("ecarte","Écarter")}
+      </div>
+    </div>
+  </article>`;
+}
+
+async function maj(id,data){
+  const row=state.rows.find(r=>r.id===id); if(row)Object.assign(row,data); render();
+  try{await db.collection("annonces").doc(id).update(data)}catch(e){console.warn(e)}
+}
+
+async function analyser(id){
+  const a=state.rows.find(r=>r.id===id); if(!a||!sample)return;
+  state.busy[id]=true;render();
+  try{
+    const res=await sample(`Tu conseilles Clément, réalisateur-vidéaste freelance près de Lyon (studio Impulse Creative Agency, auto-entrepreneur, 7-10 ans d'expérience, clients Haribo, L'Oréal, Decathlon ; tournage, lumière, étalonnage, motion design ; travaille seul ou avec un cadreur).
+Voici un marché public :
+Titre : ${a.titre}
+Acheteur : ${a.acheteur}
+Lieu : ${lieuTxt(a)}
+Date limite : ${a.date_limite||"inconnue"}
+Procédure : ${a.procedure||"?"}
+Détails : ${a.description||a.resume_ia||"—"}
+Réponds en français, 5 lignes maximum, sans titre :
+1) Verdict : GO, À VÉRIFIER ou NO-GO, avec la raison principale.
+2) Risque ou exigence à vérifier dans le DCE (références, chiffre d'affaires, allotissement, déplacements).
+3) L'angle de candidature qui le distinguerait.`,{modelTier:"default"});
+    await maj(id,{analyse:res.text.trim()});
+  }catch(e){if(e?.code==="not_granted"){sample=null}}
+  finally{delete state.busy[id];render()}
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-f]");if(t){state.filtre=t.dataset.f;render();return}
+  const b=e.target.closest("[data-act]");if(!b)return;
+  if(b.dataset.act==="statut"){const row=state.rows.find(r=>r.id===b.dataset.id);const v=(row?.statut===b.dataset.v)?"nouveau":b.dataset.v;maj(b.dataset.id,{statut:v})}
+  if(b.dataset.act==="analyse")analyser(b.dataset.id);
+});
+document.addEventListener("change",e=>{
+  const n=e.target.dataset?.note;if(n){maj(n,{note:e.target.value});return}
+  if(e.target.id==="zone"){state.zone=e.target.value;render()}
+  if(e.target.id==="tri"){state.tri=e.target.value;render()}
+});
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
+try{const z=localStorage.getItem("veille-zone");if(z){state.zone=z;$("#zone").value=z}}catch(_){}
+$("#zone").addEventListener("change",e=>{try{localStorage.setItem("veille-zone",e.target.value)}catch(_){}});
+
+(async()=>{
+  db=await claude.use("db");
+  sample=await claude.use("sample");
+  if(!db){$("#list").innerHTML=`<div class="empty"><strong>Connexion requise</strong>Ouvre ce tableau connecté à ton compte Claude pour voir les marchés.</div>`;return}
+  db.collection("annonces").limit(1000).onSnapshot(s=>{state.rows=s.docs.map(d=>({id:d.id,...d.data()}));render()},e=>console.warn(e));
+  db.doc("meta/etat").onSnapshot(s=>{state.meta=s.exists?s.data():null;render()});
+})();
+render();
+</script>

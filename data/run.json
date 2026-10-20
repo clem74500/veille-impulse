@@ -1,0 +1,13 @@
+{
+ "date": "2026-10-20T19:12:26+00:00",
+ "depuis": "2026-09-05",
+ "sources": {
+  "BOAMP": null,
+  "TED": 25
+ },
+ "erreurs": [
+  "BOAMP: URLError: <urlopen error [Errno 104] Connection reset by peer>"
+ ],
+ "nouvelles": 9,
+ "total_suivies": 9
+}
