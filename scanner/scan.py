@@ -158,7 +158,7 @@ def fetch_boamp(depuis: date) -> list[dict]:
                     "source": "BOAMP",
                     "titre": (r.get("objet") or "").strip(),
                     "acheteur": (r.get("nomacheteur") or "").strip(),
-                    "lieu": [str(d) for d in depts],
+                    "lieu": [str(d).zfill(2) if str(d).isdigit() else str(d) for d in depts],
                     "date_publication": parse_date(r.get("dateparution")),
                     "date_limite": parse_date(r.get("datelimitereponse")),
                     "type": r.get("type_marche") or r.get("type_marche_facette") or "",
@@ -258,6 +258,7 @@ def main() -> int:
     for a in brutes:
         a = score_annonce(a)
         if a["exclu"] or a["score"] < CONFIG["score_minimum"]:
+            connues.pop(a["id"], None)  # un réglage plus strict retire aussi les anciennes
             continue
         if a.get("date_limite") and a["date_limite"] < TODAY.isoformat():
             continue
