@@ -1,1 +1,79 @@
-[]
+[
+ {
+  "id": "ted-738035-2026",
+  "source": "TED",
+  "titre": "France – Services de conception graphique – PRESTATIONS POUR LA REALISATION DU MAGAZINE ECONOMIQUE CCI & Co ! DE LA CCI LYON METROPOLE SAINT-ETIENNE ROANNE",
+  "acheteur": "CCI Lyon Métropole - Saint-Etienne - Roanne",
+  "lieu": [
+   "FRK26",
+   "FRK26",
+   "FRK26",
+   "FRK26",
+   "FRK26",
+   "FRK26",
+   "FRK26"
+  ],
+  "date_publication": "2026-10-26",
+  "date_limite": "2026-11-24",
+  "type": "Services",
+  "procedure": "cn-standard",
+  "descripteurs": [],
+  "cpv": [
+   "79822500",
+   "92400000",
+   "79961300",
+   "79824000",
+   "79340000",
+   "79822500",
+   "92400000",
+   "79961300",
+   "79824000",
+   "79824000",
+   "79340000"
+  ],
+  "description": "Direction artistique, Une, mise en page, pré-presse",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/738035-2026",
+  "score": 55,
+  "raisons": [
+   "CPV audiovisuel/photo",
+   "Rhône / Lyon"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-26"
+ },
+ {
+  "id": "ted-739740-2026",
+  "source": "TED",
+  "titre": "France – Production de films et de vidéos à usage pédagogique – RÉALISATION DE DISPOSITIFS NUMÉRIQUES POUR L’EXPOSITION TEMPORAIRE – PACIFIQUE, DE NANTES AU GRAND OCÉAN",
+  "acheteur": "Société publique locale Le Voyage à Nantes",
+  "lieu": [
+   "FRG01",
+   "FRG01",
+   "FRG01",
+   "FRG01",
+   "FRG01"
+  ],
+  "date_publication": "2026-10-26",
+  "date_limite": "2026-11-26",
+  "type": "Services",
+  "procedure": "cn-standard",
+  "descripteurs": [],
+  "cpv": [
+   "92111100",
+   "92111100",
+   "72212520",
+   "92111100",
+   "92111100"
+  ],
+  "description": "Le marché a pour objet la réalisation du film cartographique qui sera diffusé dans la partie introductive de l’exposition Pacifique.",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/739740-2026",
+  "score": 55,
+  "raisons": [
+   "video",
+   "film",
+   "CPV audiovisuel/photo"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-26"
+ }
+]
