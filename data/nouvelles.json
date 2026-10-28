@@ -1,1 +1,31 @@
-[]
+[
+ {
+  "id": "boamp-26-104448",
+  "source": "BOAMP",
+  "titre": "Réalisation d'un film documentaire sur l'histoire ferroviaire de la Montagne Bourbonnaise",
+  "acheteur": "Communauté d'Agglomération Vichy Communauté",
+  "lieu": [
+   "03"
+  ],
+  "date_publication": "2026-10-27",
+  "date_limite": "2026-11-23",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Film"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-104448",
+  "score": 50,
+  "raisons": [
+   "film",
+   "film documentaire",
+   "Auvergne-Rhône-Alpes"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-28"
+ }
+]

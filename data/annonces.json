@@ -32,38 +32,6 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "ted-722380-2026",
-  "source": "TED",
-  "titre": "France – Services de production de films cinématographique et de vidéos et services connexes – Affaire n°26A037 - Captation et retransmission des conseils en direct et en différé sur Internet",
-  "acheteur": "Chartres Métropole (28)",
-  "lieu": [
-   "FRB02",
-   "FRB02"
-  ],
-  "date_publication": "2026-10-19",
-  "date_limite": "2026-11-03",
-  "type": "Services",
-  "procedure": "cn-standard",
-  "descripteurs": [],
-  "cpv": [
-   "92110000",
-   "92110000",
-   "92111260"
-  ],
-  "description": "La nature et quantité et les besoins sont indiqués dans le cahier des charges.",
-  "url": "https://ted.europa.eu/fr/notice/-/detail/722380-2026",
-  "score": 75,
-  "raisons": [
-   "captation",
-   "video",
-   "film",
-   "retransmission",
-   "CPV audiovisuel/photo"
-  ],
-  "exclu": false,
-  "vu_le": "2026-10-20"
- },
- {
   "id": "ted-673221-2026",
   "source": "TED",
   "titre": "France – Production de vidéos d'information – REALISATION DE PRESTATIONS AUDIOVISUELLES POUR LE COMPTE DU DEPARTEMENT DE LOT-ET-GARONNE - 3 lots",
@@ -163,6 +131,39 @@
    "photographi",
    "photo",
    "Rhône / Lyon"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-20"
+ },
+ {
+  "id": "ted-722380-2026",
+  "source": "TED",
+  "titre": "France – Services de production de films cinématographique et de vidéos et services connexes – Affaire n°26A037 - Captation et retransmission des conseils en direct et en différé sur Internet",
+  "acheteur": "Chartres Métropole (28)",
+  "lieu": [
+   "FRB02",
+   "FRB02"
+  ],
+  "date_publication": "2026-10-19",
+  "date_limite": "2026-11-03",
+  "type": "Services",
+  "procedure": "cn-standard",
+  "descripteurs": [],
+  "cpv": [
+   "92110000",
+   "92110000",
+   "92111260"
+  ],
+  "description": "La nature et quantité et les besoins sont indiqués dans le cahier des charges.",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/722380-2026",
+  "score": 70,
+  "raisons": [
+   "captation",
+   "video",
+   "film",
+   "retransmission",
+   "CPV audiovisuel/photo",
+   "délai court (6 j)"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
@@ -572,6 +573,35 @@
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-104448",
+  "source": "BOAMP",
+  "titre": "Réalisation d'un film documentaire sur l'histoire ferroviaire de la Montagne Bourbonnaise",
+  "acheteur": "Communauté d'Agglomération Vichy Communauté",
+  "lieu": [
+   "03"
+  ],
+  "date_publication": "2026-10-27",
+  "date_limite": "2026-11-23",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Film"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-104448",
+  "score": 50,
+  "raisons": [
+   "film",
+   "film documentaire",
+   "Auvergne-Rhône-Alpes"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-28"
  },
  {
   "id": "boamp-26-93272",
