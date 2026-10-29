@@ -1,31 +1,31 @@
 [
  {
-  "id": "boamp-26-104448",
+  "id": "boamp-26-104661",
   "source": "BOAMP",
-  "titre": "Réalisation d'un film documentaire sur l'histoire ferroviaire de la Montagne Bourbonnaise",
-  "acheteur": "Communauté d'Agglomération Vichy Communauté",
+  "titre": "ACQUISITION ET INSTALLATION DE MATÉRIELS AUDIOVISUELS POUR L’UNIVERSITÉ JEAN MOULIN LYON 3",
+  "acheteur": "Université Jean Moulin Lyon 3",
   "lieu": [
-   "03"
+   "69",
+   "01"
   ],
-  "date_publication": "2026-10-27",
-  "date_limite": "2026-11-23",
+  "date_publication": "2026-10-29",
+  "date_limite": "2026-12-01",
   "type": [
-   "SERVICES"
+   "FOURNITURES"
   ],
   "procedure": "Procédure Ouverte",
   "descripteurs": [
-   "Film"
+   "Audiovisuel"
   ],
   "cpv": [],
   "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-104448",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-104661",
   "score": 50,
   "raisons": [
-   "film",
-   "film documentaire",
-   "Auvergne-Rhône-Alpes"
+   "audiovisuel",
+   "Rhône / Lyon"
   ],
   "exclu": false,
-  "vu_le": "2026-10-28"
+  "vu_le": "2026-10-29"
  }
 ]

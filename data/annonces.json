@@ -163,7 +163,7 @@
    "film",
    "retransmission",
    "CPV audiovisuel/photo",
-   "délai court (6 j)"
+   "délai court (5 j)"
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
@@ -602,6 +602,35 @@
   ],
   "exclu": false,
   "vu_le": "2026-10-28"
+ },
+ {
+  "id": "boamp-26-104661",
+  "source": "BOAMP",
+  "titre": "ACQUISITION ET INSTALLATION DE MATÉRIELS AUDIOVISUELS POUR L’UNIVERSITÉ JEAN MOULIN LYON 3",
+  "acheteur": "Université Jean Moulin Lyon 3",
+  "lieu": [
+   "69",
+   "01"
+  ],
+  "date_publication": "2026-10-29",
+  "date_limite": "2026-12-01",
+  "type": [
+   "FOURNITURES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Audiovisuel"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-104661",
+  "score": 50,
+  "raisons": [
+   "audiovisuel",
+   "Rhône / Lyon"
+  ],
+  "exclu": false,
+  "vu_le": "2026-10-29"
  },
  {
   "id": "boamp-26-93272",
