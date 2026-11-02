@@ -1,1 +1,34 @@
-[]
+[
+ {
+  "id": "boamp-26-105784",
+  "source": "BOAMP",
+  "titre": "Sensibilisation au risque inondation par la mise en place de repères de crue, création d'une vidéo type motion design et de panneaux didactiques",
+  "acheteur": "Syndicat Rivières Salat Volp",
+  "lieu": [
+   "09",
+   "31",
+   "34",
+   "64"
+  ],
+  "date_publication": "2026-10-30",
+  "date_limite": "2026-12-04",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Adaptée",
+  "descripteurs": [
+   "Etude",
+   "Rivières/ruisseaux"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-105784",
+  "score": 50,
+  "raisons": [
+   "motion design",
+   "video"
+  ],
+  "exclu": false,
+  "vu_le": "2026-11-02"
+ }
+]

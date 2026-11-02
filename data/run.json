@@ -1,11 +1,11 @@
 {
- "date": "2026-10-30T11:00:21+00:00",
- "depuis": "2026-10-20",
+ "date": "2026-11-02T12:50:40+00:00",
+ "depuis": "2026-10-23",
  "sources": {
-  "BOAMP": 50,
-  "TED": 7
+  "BOAMP": 36,
+  "TED": 5
  },
  "erreurs": [],
- "nouvelles": 0,
- "total_suivies": 23
+ "nouvelles": 1,
+ "total_suivies": 24
 }
