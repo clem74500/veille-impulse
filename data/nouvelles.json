@@ -1,34 +1,44 @@
 [
  {
-  "id": "boamp-26-105784",
-  "source": "BOAMP",
-  "titre": "Sensibilisation au risque inondation par la mise en place de repères de crue, création d'une vidéo type motion design et de panneaux didactiques",
-  "acheteur": "Syndicat Rivières Salat Volp",
+  "id": "ted-761518-2026",
+  "source": "TED",
+  "titre": "France – Services de production de films cinématographique et de vidéos et services connexes – Restauration, numérisation et sauvegarde de films cinématographiques et prestations associées",
+  "acheteur": "Centre national du cinéma et de l'image animée",
   "lieu": [
-   "09",
-   "31",
-   "34",
-   "64"
+   "FR103",
+   "FR103",
+   "FR103",
+   "FR103",
+   "FR103",
+   "FR103",
+   "FR103",
+   "FR103"
   ],
-  "date_publication": "2026-10-30",
-  "date_limite": "2026-12-04",
-  "type": [
-   "SERVICES"
+  "date_publication": "2026-11-03",
+  "date_limite": "2027-01-08",
+  "type": "Services",
+  "procedure": "cn-standard",
+  "descripteurs": [],
+  "cpv": [
+   "92110000",
+   "92110000",
+   "92110000",
+   "92110000",
+   "92110000",
+   "92110000",
+   "92110000",
+   "92110000"
   ],
-  "procedure": "Procédure Adaptée",
-  "descripteurs": [
-   "Etude",
-   "Rivières/ruisseaux"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-105784",
-  "score": 50,
+  "description": "Traitement chimique et physique de supports photochimiques très endommagés ; films nitrate en décomposition ou de support acétate (bandes magnétique ou image) souffrant du syndrome de vinaigre avancé et support polyester",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/761518-2026",
+  "score": 63,
   "raisons": [
-   "motion design",
-   "video"
+   "video",
+   "photo",
+   "film",
+   "CPV audiovisuel/photo"
   ],
   "exclu": false,
-  "vu_le": "2026-11-02"
+  "vu_le": "2026-11-03"
  }
 ]
