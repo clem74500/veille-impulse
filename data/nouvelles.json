@@ -1,60 +1,31 @@
 [
  {
-  "id": "boamp-26-106932",
+  "id": "boamp-26-107471",
   "source": "BOAMP",
-  "titre": "Accord-cadre alloti relatif aux prestations de prises de vue et de reportages photographiques pour le musée du quai Branly - Jacques Chirac",
-  "acheteur": "MUSEE DU QUAI BRANLY - JACQUES CHIRAC",
+  "titre": "Prestations audiovisuelles, scéniques et évènementielles-.",
+  "acheteur": "C3C Ressources et Territoires",
   "lieu": [
-   "75"
+   "51"
   ],
-  "date_publication": "2026-11-05",
-  "date_limite": "2026-11-13",
+  "date_publication": "2026-11-06",
+  "date_limite": "2027-01-11",
   "type": [
    "SERVICES"
   ],
   "procedure": "Procédure Ouverte",
   "descripteurs": [
-   "Prestations de services"
+   "Vidéo, cinéma"
   ],
   "cpv": [],
   "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106932",
-  "score": 55,
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-107471",
+  "score": 45,
   "raisons": [
-   "prises de vue",
-   "reportage",
-   "photographi",
-   "photo"
-  ],
-  "exclu": false,
-  "vu_le": "2026-11-05"
- },
- {
-  "id": "boamp-26-107014",
-  "source": "BOAMP",
-  "titre": "AUDIOVISUEL",
-  "acheteur": "ENSA Lyon",
-  "lieu": [
-   "69"
-  ],
-  "date_publication": "2026-11-05",
-  "date_limite": "2027-01-04",
-  "type": [
-   "FOURNITURES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Audiovisuel"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-107014",
-  "score": 50,
-  "raisons": [
+   "video",
    "audiovisuel",
-   "Rhône / Lyon"
+   "evenementiel"
   ],
   "exclu": false,
-  "vu_le": "2026-11-05"
+  "vu_le": "2026-11-06"
  }
 ]
