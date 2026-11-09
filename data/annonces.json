@@ -426,36 +426,6 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "boamp-26-106932",
-  "source": "BOAMP",
-  "titre": "Accord-cadre alloti relatif aux prestations de prises de vue et de reportages photographiques pour le musée du quai Branly - Jacques Chirac",
-  "acheteur": "MUSEE DU QUAI BRANLY - JACQUES CHIRAC",
-  "lieu": [
-   "75"
-  ],
-  "date_publication": "2026-11-05",
-  "date_limite": "2026-11-13",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Prestations de services"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106932",
-  "score": 55,
-  "raisons": [
-   "prises de vue",
-   "reportage",
-   "photographi",
-   "photo"
-  ],
-  "exclu": false,
-  "vu_le": "2026-11-05"
- },
- {
   "id": "boamp-26-101414",
   "source": "BOAMP",
   "titre": "Prestations de captation, réalisation, diffusion en direct et mise à disposition en replay des séances du conseil municipal et d'événements municipaux",
@@ -645,6 +615,37 @@
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-106932",
+  "source": "BOAMP",
+  "titre": "Accord-cadre alloti relatif aux prestations de prises de vue et de reportages photographiques pour le musée du quai Branly - Jacques Chirac",
+  "acheteur": "MUSEE DU QUAI BRANLY - JACQUES CHIRAC",
+  "lieu": [
+   "75"
+  ],
+  "date_publication": "2026-11-05",
+  "date_limite": "2026-11-13",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Prestations de services"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106932",
+  "score": 50,
+  "raisons": [
+   "prises de vue",
+   "reportage",
+   "photographi",
+   "photo",
+   "délai court (4 j)"
+  ],
+  "exclu": false,
+  "vu_le": "2026-11-05"
  },
  {
   "id": "boamp-26-104448",
