@@ -617,37 +617,6 @@
   "vu_le": "2026-10-20"
  },
  {
-  "id": "boamp-26-106932",
-  "source": "BOAMP",
-  "titre": "Accord-cadre alloti relatif aux prestations de prises de vue et de reportages photographiques pour le musée du quai Branly - Jacques Chirac",
-  "acheteur": "MUSEE DU QUAI BRANLY - JACQUES CHIRAC",
-  "lieu": [
-   "75"
-  ],
-  "date_publication": "2026-11-05",
-  "date_limite": "2026-11-13",
-  "type": [
-   "SERVICES"
-  ],
-  "procedure": "Procédure Ouverte",
-  "descripteurs": [
-   "Prestations de services"
-  ],
-  "cpv": [],
-  "description": "",
-  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106932",
-  "score": 50,
-  "raisons": [
-   "prises de vue",
-   "reportage",
-   "photographi",
-   "photo",
-   "délai court (3 j)"
-  ],
-  "exclu": false,
-  "vu_le": "2026-11-05"
- },
- {
   "id": "boamp-26-104448",
   "source": "BOAMP",
   "titre": "Réalisation d'un film documentaire sur l'histoire ferroviaire de la Montagne Bourbonnaise",
@@ -854,6 +823,37 @@
   ],
   "exclu": false,
   "vu_le": "2026-10-20"
+ },
+ {
+  "id": "boamp-26-106932",
+  "source": "BOAMP",
+  "titre": "Accord-cadre alloti relatif aux prestations de prises de vue et de reportages photographiques pour le musée du quai Branly - Jacques Chirac",
+  "acheteur": "MUSEE DU QUAI BRANLY - JACQUES CHIRAC",
+  "lieu": [
+   "75"
+  ],
+  "date_publication": "2026-11-05",
+  "date_limite": "2026-11-13",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Prestations de services"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106932",
+  "score": 45,
+  "raisons": [
+   "prises de vue",
+   "reportage",
+   "photographi",
+   "photo",
+   "délai très court (2 j)"
+  ],
+  "exclu": false,
+  "vu_le": "2026-11-05"
  },
  {
   "id": "boamp-26-107471",
