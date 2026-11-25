@@ -1,1 +1,30 @@
-[]
+[
+ {
+  "id": "ted-818376-2026",
+  "source": "TED",
+  "titre": "France – Services cinématographiques et services vidéo – Production de contenus photos et vidéos et postproduction pour Filieris",
+  "acheteur": "FILIERIS",
+  "lieu": [],
+  "date_publication": "2026-11-25",
+  "date_limite": "2027-01-15",
+  "type": "Services",
+  "procedure": "cn-standard",
+  "descripteurs": [],
+  "cpv": [
+   "92100000",
+   "79961000",
+   "92100000",
+   "79961000"
+  ],
+  "description": "Prestations de réalisation de contenus vidéos",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/818376-2026",
+  "score": 58,
+  "raisons": [
+   "video",
+   "photo",
+   "CPV audiovisuel/photo"
+  ],
+  "exclu": false,
+  "vu_le": "2026-11-25"
+ }
+]
