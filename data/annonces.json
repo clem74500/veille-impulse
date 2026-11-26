@@ -281,6 +281,36 @@
   "vu_le": "2026-11-03"
  },
  {
+  "id": "boamp-26-114616",
+  "source": "BOAMP",
+  "titre": "Captation Video",
+  "acheteur": "Cybèle Production",
+  "lieu": [
+   "38"
+  ],
+  "date_publication": "2026-11-25",
+  "date_limite": "2026-12-17",
+  "type": [
+   "SERVICES"
+  ],
+  "procedure": "Procédure Ouverte",
+  "descripteurs": [
+   "Vidéo, cinéma",
+   "Télévision"
+  ],
+  "cpv": [],
+  "description": "",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-114616",
+  "score": 60,
+  "raisons": [
+   "captation",
+   "video",
+   "Auvergne-Rhône-Alpes"
+  ],
+  "exclu": false,
+  "vu_le": "2026-11-26"
+ },
+ {
   "id": "ted-818376-2026",
   "source": "TED",
   "titre": "France – Services cinématographiques et services vidéo – Production de contenus photos et vidéos et postproduction pour Filieris",
